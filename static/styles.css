@@ -1,0 +1,126 @@
+form {
+    margin: 0 auto;
+    width: 30%;
+}
+
+textarea {
+    background-color: rgba(250, 128, 114, 0.473);
+    color: white;
+    font-size: xx-large;
+    border-radius: 10px;
+}
+
+#bouton-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+label {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+    font-size: 6rem;
+    margin-bottom: 150px;
+}
+
+select {
+    align-self: center;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: white;
+}
+
+body {
+    background-image: url(/static/image/fondSite.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    color: white;
+    width: 99%;
+}
+
+#naruto {
+    margin: 0;
+    text-align: center;
+}
+
+#naruto>img {
+    width: 30%;
+    border-radius: 55px;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    width: 25%;
+    min-width: 120px;
+    border-radius: 35px;
+    align-self:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 4px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 980px) {
+    label {
+        font-size: medium;
+        text-shadow: none;
+    }
+
+    form {
+        width: 50%;
+        height: 5%;
+    }
+
+    select {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 100px;
+    }
+
+}
+
+pre {
+    color: white;
+    overflow-y: auto;
+
+}
+#downloadIcon {
+    width: 20px;
+}

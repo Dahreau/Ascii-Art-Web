@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Monoton&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>ASCII ART WEB</h1>
+        <form method="post" action="/download">
+            <div id="bouton-conteiner">
+                <label for="text" display="block">Entrez votre texte :</label>
+                <textarea name="text" rows="5" cols="32" id="textInput" onkeyup="onInputChange()"></textarea>
+                <select name="style" id="style" onchange="onInputChange()">
+                    <option value="standard">Standard</option>
+                    <option value="shadow">Shadow</option>
+                    <option value="thinkertoy">Thinkertoy</option>
+                </select>
+                <button type="submit"><img id="downloadIcon" src="static/assets/telecharger.png"
+                        alt="Icone téléchargement">Download</button>
+            </div>
+        </form>
+        <div>
+            <pre id=result></pre>
+        </div>
+    </div>
+    <footer><span>Création de Dylan,Daro,Alex</span></footer>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
